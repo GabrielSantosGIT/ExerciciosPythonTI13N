@@ -8,6 +8,11 @@ def Menu():
         '\n2. Execício  02' +
         '\n3. Exercício 03' +
         '\n4. Exercício 04' +
+        '\n5. Exercício 05' +
+        '\n6. Exercício 06' +
+        '\n7. Exercício 07' +
+        '\n8. Exercício 08' +
+        '\n9. Exercício 09' +
         '\n0. Sair'         +
         '\nEscolha uma das opções acima: ')
     this.opcao = int(input())
@@ -27,6 +32,17 @@ def Executar():
             elif this.opcao == 4:
                 print('informe sua idade em anos, meses e dias:')
                 print(ExerciciosModel.exercicio04())
+            elif this.opcao == 5:
+                print(ExerciciosModel.exercicio05())
+            elif this.opcao == 6:
+                print(ExerciciosModel.exercicio06())
+            elif this.opcao == 7:
+                print(ExerciciosModel.exercicio07())
+            elif this.opcao == 8:
+                print(ExerciciosModel.exercicio08())
+            elif this.opcao == 9:
+                print(ExerciciosModel.exercicio09())
+
 
             else:
                 print('Opção informada não é valida!')
