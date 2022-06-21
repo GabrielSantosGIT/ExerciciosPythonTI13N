@@ -2,6 +2,8 @@ import this
 import ExerciciosModel
 this.opcao = -1
 
+
+
 def Menu():
     print('Menu\n\n'    +
         '\n1. Exercício 01' +
@@ -13,6 +15,10 @@ def Menu():
         '\n7. Exercício 07' +
         '\n8. Exercício 08' +
         '\n9. Exercício 09' +
+        '\n10.Exercício 10' +
+        '\n11.Exercício 11' +
+        '\n12.Exercício 12' +
+        '\n13.Exercício 13' +
         '\n0. Sair'         +
         '\nEscolha uma das opções acima: ')
     this.opcao = int(input())
@@ -42,8 +48,12 @@ def Executar():
                 print(ExerciciosModel.exercicio08())
             elif this.opcao == 9:
                 print(ExerciciosModel.exercicio09())
-
-
+            elif this.opcao == 10:
+                print(ExerciciosModel.exercicio10())
+            elif this.opcao == 11:
+                print(ExerciciosModel.exercicio11())
+            elif this.opcao == 12:
+                print(ExerciciosModel.exericio12())
             else:
                 print('Opção informada não é valida!')
 

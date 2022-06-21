@@ -18,7 +18,12 @@ def exercicio03():
     base = int(input('Informe a base'))
     alt = int(input('informe a altura'))
     area = base * alt
-    return area
+    if base <= 0:
+        return 'por favor, digite um valor positivo!'
+    elif  alt <= 0:
+        return 'por favor, digite um valor positivo!'
+    else:
+        return area
 
 def exercicio04():
     ano = int(input('informe os anos'))
@@ -63,15 +68,45 @@ def exercicio08():
     return media
 
 def exercicio09():
-        qntd = (input('informe a quantidade de maçãs'))
-        qntd1 = 0
-        qntd2 = 0
+    maca = int(input('informe a quantidade de maçãs'))
+    if maca >= 12:
+       total = maca
+       msg = '\n custo total da compra: {}'.format(total)
+       return msg
 
-        if qntd1 < 12:
-           qntd1 = 1.30 * qntd
-        print("Custo da compra: ", qntd1)
+    else:
+       maca <= 12
+       total2 = maca * 1.30
+       msg1 = '\n custo total da compra: {}'.format(total2)
+       return msg1
 
-        elif qntd2 >= 12:
-             qntd2 = 1.00 * qntd
-        print ("Custo da compra: ",qntd2)
+def exercicio10():
+    vet = []
+    for i in range(10):
+        valor = int(input('informe o {}º valor: '.format(i+1)))
+        vet.append(valor)
+
+    vet.sort()
+    print('Os números em Ordem são: {}'.format(vet))
+
+def exercicio11():
+    sFixo = float(input('informe o Salário Fixo'))
+    vVendas =  float(input('informe o valor de Vendas'))
+
+    if vVendas <= 1500:
+        Stotal1 =  vVendas * 3 /100 + vVendas + sFixo
+        msg =  '\n Salário total: {}'.format(Stotal1)
+        return msg
+
+    elif vVendas > 1500:
+        Stotal2 = vVendas * 5 /100 + vVendas + sFixo
+        msg1 ='\n Salário total: {}'.format(Stotal2)
+        return msg1
+
+def exercicio12():
+    NumConta = float(input('informe o número da conta:'))
+    Saldo =  float(input('informe o saldo da conta: '))
+    debito = float(input ('informe o debito da conta: '))
+    credito = float(input ('informe o credito da conta:'))
+
 
